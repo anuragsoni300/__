@@ -7,4 +7,5 @@ func main() {
 	BSort()
 	SSort()
 	ISort()
+	MSort()
 }
