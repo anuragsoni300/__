@@ -8,4 +8,5 @@ func main() {
 	SSort()
 	ISort()
 	MSort()
+	QSort()
 }
