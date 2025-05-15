@@ -9,4 +9,5 @@ func main() {
 	ISort()
 	MSort()
 	QSort()
+	RotateByK()
 }
