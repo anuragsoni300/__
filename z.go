@@ -1,13 +1,17 @@
 package main
 
+import (
+	arr "./arrays"
+)
+
 func main() {
-	Insertion()
-	Deletion()
-	BSearch()
-	BSort()
-	SSort()
-	ISort()
-	MSort()
-	QSort()
-	RotateByK()
+	arr.Insertion()
+	arr.Deletion()
+	arr.BSearch()
+	arr.BSort()
+	arr.SSort()
+	arr.ISort()
+	arr.MSort()
+	arr.QSort()
+	arr.RotateByK()
 }
