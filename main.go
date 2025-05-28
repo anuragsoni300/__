@@ -1,7 +1,7 @@
 package main
 
 import (
-	arr "./arrays"
+	arr "github.com/anuragsoni300/__/arrays"
 )
 
 func main() {
@@ -14,4 +14,5 @@ func main() {
 	arr.MSort()
 	arr.QSort()
 	arr.RotateByK()
+	arr.MinMaxSubArray()
 }
