@@ -15,4 +15,5 @@ func main() {
 	arr.QSort()
 	arr.RotateByK()
 	arr.MinMaxSubArray()
+	arr.LongestSubArraySumK()
 }
