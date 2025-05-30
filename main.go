@@ -16,4 +16,5 @@ func main() {
 	arr.RotateByK()
 	arr.MinMaxSubArray()
 	arr.LongestSubArraySumK()
+	arr.PeakElement()
 }
