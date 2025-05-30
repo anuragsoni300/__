@@ -18,4 +18,5 @@ func main() {
 	arr.LongestSubArraySumK()
 	arr.PeakElement()
 	arr.FirstAndLast()
+	arr.RotationCout()
 }
