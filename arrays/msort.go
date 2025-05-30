@@ -6,7 +6,7 @@ func MSort() {
 	a := []int{7, 8, 9, 4, 5, 3, 1, 2, 6}
 
 	a = MergeSort(a)
-	fmt.Printf("%-30s %v\n", "Merge Sort", a)
+	fmt.Printf("%-60s %v\n", "Merge Sort", a)
 }
 
 func MergeSort(a []int) []int {

@@ -22,5 +22,5 @@ func LongestSubArraySumK() {
 			mp[prefSum] = i
 		}
 	}
-	fmt.Printf("%-30s %v\n", "Length of max subarr", ans)
+	fmt.Printf("%-60s %v\n", "Length of max subarr", ans)
 }

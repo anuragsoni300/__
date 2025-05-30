@@ -10,7 +10,7 @@ func BSearch() {
 	for i <= j {
 		mid := i + (j-i)/2
 		if a[mid] == search {
-			fmt.Printf("%-30s %d\n", "Found at", mid)
+			fmt.Printf("%-60s %d\n", "Found at", mid)
 			return
 		} else if a[mid] > search {
 			j = mid - 1

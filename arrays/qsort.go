@@ -63,14 +63,14 @@ func QSort() {
 	a := []int{7, 8, 9, 4, 5, 3, 1, 2, 6}
 	low, high := 0, len(a)-1
 	quickSort(a, low, high)
-	fmt.Printf("%-30s %v\n", "Quick Hoare", a)
+	fmt.Printf("%-60s %v\n", "Quick Hoare", a)
 
 	a = []int{7, 8, 9, 4, 5, 3, 1, 2, 6}
 	a = quickNaive(a)
-	fmt.Printf("%-30s %v\n", "Quick Naive", a)
+	fmt.Printf("%-60s %v\n", "Quick Naive", a)
 
 	a = []int{7, 8, 9, 4, 5, 3, 1, 2, 6}
 	low, high = 0, len(a)
 	quickSort_lomuto(a, low, high)
-	fmt.Printf("%-30s %v\n", "Quick Loumto", a)
+	fmt.Printf("%-60s %v\n", "Quick Loumto", a)
 }

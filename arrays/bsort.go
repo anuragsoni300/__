@@ -16,5 +16,5 @@ func BSort() {
 		}
 		j--
 	}
-	fmt.Printf("%-30s %v\n", "Bubble Sort", a)
+	fmt.Printf("%-60s %v\n", "Bubble Sort", a)
 }

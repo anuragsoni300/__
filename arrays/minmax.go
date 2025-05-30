@@ -28,5 +28,5 @@ func MinMaxSubArray() {
 		}
 	}
 
-	fmt.Printf("%-30s %v\n", "Max", max)
+	fmt.Printf("%-60s %v\n", "Max", max)
 }

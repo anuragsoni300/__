@@ -12,5 +12,5 @@ func ISort() {
 			j--
 		}
 	}
-	fmt.Printf("%-30s %v\n", "Insertion Sort", a)
+	fmt.Printf("%-60s %v\n", "Insertion Sort", a)
 }

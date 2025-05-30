@@ -7,7 +7,7 @@ func FirstAndLast() {
 	target := 5
 	l := bSearch(a, target, true)
 	r := bSearch(a, target, false)
-	fmt.Printf("%-30s %d\n", "Found at", []int{l, r})
+	fmt.Printf("%-60s %d\n", "Found at", []int{l, r})
 }
 
 func bSearch(a []int, target int, findStart bool) int {

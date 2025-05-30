@@ -13,5 +13,5 @@ func RotationCout() {
 			r = m
 		}
 	}
-	fmt.Printf("%-30s %d\n", "Rotation count", a[l])
+	fmt.Printf("%-60s %d\n", "Rotation count", l)
 }

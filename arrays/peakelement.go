@@ -15,5 +15,5 @@ func PeakElement() {
 		}
 	}
 
-	fmt.Printf("%-30s %v\n", "Peak Element", a[l])
+	fmt.Printf("%-60s %v\n", "Peak Element", a[l])
 }

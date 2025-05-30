@@ -17,5 +17,5 @@ func SSort() {
 		}
 		a[i], a[minIndex] = a[minIndex], a[i]
 	}
-	fmt.Printf("%-30s %v\n", "Selection Sort", a)
+	fmt.Printf("%-60s %v\n", "Selection Sort", a)
 }

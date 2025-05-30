@@ -19,4 +19,5 @@ func main() {
 	arr.PeakElement()
 	arr.FirstAndLast()
 	arr.RotationCout()
+	arr.SearchInRotateArr()
 }
