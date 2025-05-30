@@ -17,4 +17,5 @@ func main() {
 	arr.MinMaxSubArray()
 	arr.LongestSubArraySumK()
 	arr.PeakElement()
+	arr.FirstAndLast()
 }
