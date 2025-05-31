@@ -20,4 +20,5 @@ func main() {
 	arr.FirstAndLast()
 	arr.RotationCout()
 	arr.SearchInRotateArr()
+	arr.TwoSum()
 }
