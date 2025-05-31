@@ -15,10 +15,9 @@ func PartitionArr() {
 		} else if a[k] > high {
 			a[k], a[j] = a[j], a[k]
 			j--
-			// Don't increment k here — recheck the swapped-in value
 		} else {
 			k++
 		}
 	}
-	fmt.Printf("%-60s %v\n", "Partitioned array", a)
+	fmt.Printf("%-60s %v\n", "Partiton array", a)
 }

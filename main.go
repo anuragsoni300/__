@@ -24,5 +24,5 @@ func main() {
 	arr.RemoveDuplicates()
 	arr.PartitionArr()
 	arr.Kadanes()
-	arr.MergeSorted()
+	arr.Frequencies()
 }
