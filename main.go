@@ -21,4 +21,5 @@ func main() {
 	arr.RotationCout()
 	arr.SearchInRotateArr()
 	arr.TwoSum()
+	arr.RemoveDuplicates()
 }
