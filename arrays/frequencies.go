@@ -11,4 +11,5 @@ func Frequencies() {
 	}
 
 	fmt.Printf("%-60s %v\n", "Frequencies", mp)
+	fmt.Printf("%-60s %v\n", "Count", len(mp))
 }
