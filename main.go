@@ -22,4 +22,5 @@ func main() {
 	arr.SearchInRotateArr()
 	arr.TwoSum()
 	arr.RemoveDuplicates()
+	arr.PartitionArr()
 }
