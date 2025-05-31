@@ -23,4 +23,5 @@ func main() {
 	arr.TwoSum()
 	arr.RemoveDuplicates()
 	arr.PartitionArr()
+	arr.Kadanes()
 }
