@@ -26,4 +26,5 @@ func main() {
 	arr.Kadanes()
 	arr.Frequencies()
 	arr.MoveZeroes()
+	arr.EvenOddSort()
 }
