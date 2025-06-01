@@ -25,4 +25,5 @@ func main() {
 	arr.PartitionArr()
 	arr.Kadanes()
 	arr.Frequencies()
+	arr.MoveZeroes()
 }
