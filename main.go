@@ -2,6 +2,7 @@ package main
 
 import (
 	arr "github.com/anuragsoni300/__/arrays"
+	"github.com/anuragsoni300/__/common"
 )
 
 func main() {
@@ -30,4 +31,6 @@ func main() {
 	arr.ColorSort()
 	arr.MissingNo()
 	arr.RepeatedElement()
+
+	common.GCD()
 }
