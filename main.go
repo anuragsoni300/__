@@ -29,4 +29,5 @@ func main() {
 	arr.EvenOddSort()
 	arr.ColorSort()
 	arr.MissingNo()
+	arr.RepeatedElement()
 }
