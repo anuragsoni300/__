@@ -27,4 +27,5 @@ func main() {
 	arr.Frequencies()
 	arr.MoveZeroes()
 	arr.EvenOddSort()
+	arr.ColorSort()
 }

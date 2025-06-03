@@ -3,7 +3,7 @@ package arrays
 import "fmt"
 
 func TwoSum() {
-	a := []int{0, 0, 1, 1, 1, 2, 2, 3, 3, 4}
+	a := []int{7, 8, 9, 4, 5, 3, 1, 2, 6}
 	mp := make(map[int]int, len(a))
 	target := 10
 	ans := make([]int, 2)
