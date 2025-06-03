@@ -6,6 +6,8 @@ import (
 )
 
 func main() {
+	common.GCD()
+
 	arr.Insertion()
 	arr.Deletion()
 	arr.BSearch()
@@ -31,6 +33,5 @@ func main() {
 	arr.ColorSort()
 	arr.MissingNo()
 	arr.RepeatedElement()
-
-	common.GCD()
+	arr.Majority()
 }
