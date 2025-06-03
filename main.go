@@ -28,4 +28,5 @@ func main() {
 	arr.MoveZeroes()
 	arr.EvenOddSort()
 	arr.ColorSort()
+	arr.MissingNo()
 }
