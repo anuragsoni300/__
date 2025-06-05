@@ -1,37 +1,40 @@
 package main
 
 import (
-	arr "github.com/anuragsoni300/__/arrays"
+	"github.com/anuragsoni300/__/arrays"
 	"github.com/anuragsoni300/__/common"
+	"github.com/anuragsoni300/__/strings"
 )
 
 func main() {
 	common.GCD()
 
-	arr.Insertion()
-	arr.Deletion()
-	arr.BSearch()
-	arr.BSort()
-	arr.SSort()
-	arr.ISort()
-	arr.MSort()
-	arr.QSort()
-	arr.RotateByK()
-	arr.MinMaxSubArray()
-	arr.LongestSubArraySumK()
-	arr.PeakElement()
-	arr.FirstAndLast()
-	arr.RotationCout()
-	arr.SearchInRotateArr()
-	arr.TwoSum()
-	arr.RemoveDuplicates()
-	arr.PartitionArr()
-	arr.Kadanes()
-	arr.Frequencies()
-	arr.MoveZeroes()
-	arr.EvenOddSort()
-	arr.ColorSort()
-	arr.MissingNo()
-	arr.RepeatedElement()
-	arr.Majority()
+	arrays.Insertion()
+	arrays.Deletion()
+	arrays.BSearch()
+	arrays.BSort()
+	arrays.SSort()
+	arrays.ISort()
+	arrays.MSort()
+	arrays.QSort()
+	arrays.RotateByK()
+	arrays.MinMaxSubArray()
+	arrays.LongestSubArraySumK()
+	arrays.PeakElement()
+	arrays.FirstAndLast()
+	arrays.RotationCout()
+	arrays.SearchInRotateArr()
+	arrays.TwoSum()
+	arrays.RemoveDuplicates()
+	arrays.PartitionArr()
+	arrays.Kadanes()
+	arrays.Frequencies()
+	arrays.MoveZeroes()
+	arrays.EvenOddSort()
+	arrays.ColorSort()
+	arrays.MissingNo()
+	arrays.RepeatedElement()
+	arrays.Majority()
+
+	strings.LongestNonRepeting()
 }
