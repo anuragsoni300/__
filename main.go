@@ -8,6 +8,7 @@ import (
 
 func main() {
 	common.GCD()
+	strings.LongestNonRepeting()
 
 	arrays.Insertion()
 	arrays.Deletion()
@@ -35,6 +36,5 @@ func main() {
 	arrays.MissingNo()
 	arrays.RepeatedElement()
 	arrays.Majority()
-
-	strings.LongestNonRepeting()
+	arrays.Duplicate()
 }
