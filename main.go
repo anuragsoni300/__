@@ -37,4 +37,5 @@ func main() {
 	arrays.RepeatedElement()
 	arrays.Majority()
 	arrays.Duplicate()
+	arrays.Equilibrium()
 }
