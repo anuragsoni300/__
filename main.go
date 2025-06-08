@@ -40,4 +40,5 @@ func main() {
 	arrays.Equilibrium()
 	arrays.TrappingRainWater()
 	arrays.ContainerWithMostWater()
+	arrays.MatrixSpiral()
 }
