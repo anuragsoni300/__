@@ -39,4 +39,5 @@ func main() {
 	arrays.Duplicate()
 	arrays.Equilibrium()
 	arrays.TrappingRainWater()
+	arrays.ContainerWithMostWater()
 }
