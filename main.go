@@ -38,4 +38,5 @@ func main() {
 	arrays.Majority()
 	arrays.Duplicate()
 	arrays.Equilibrium()
+	arrays.TrappingRainWater()
 }
