@@ -40,5 +40,5 @@ func main() {
 	arrays.TrappingRainWater()
 	arrays.ContainerWithMostWater()
 	arrays.MatrixSpiral()
-	arrays.ZigZag()
+	arrays.DiagonalTraversal()
 }
