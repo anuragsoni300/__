@@ -34,11 +34,11 @@ func main() {
 	arrays.EvenOddSort()
 	arrays.ColorSort()
 	arrays.MissingNo()
-	arrays.RepeatedElement()
 	arrays.Majority()
 	arrays.Duplicate()
 	arrays.Equilibrium()
 	arrays.TrappingRainWater()
 	arrays.ContainerWithMostWater()
 	arrays.MatrixSpiral()
+	arrays.ZigZag()
 }

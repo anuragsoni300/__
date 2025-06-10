@@ -12,5 +12,5 @@ func Duplicate() {
 			break
 		}
 	}
-	fmt.Printf("%-60s %v\n", "Selection Sort", f)
+	fmt.Printf("%-60s %v\n", "Duplicate", f)
 }
