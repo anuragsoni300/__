@@ -35,5 +35,5 @@ func DiagonalTraversal() {
 			}
 		}
 	}
-	fmt.Printf("%-60s %v\n", "ZigZag", ans)
+	fmt.Printf("%-60s %v\n", "Diagonal", ans)
 }
