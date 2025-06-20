@@ -42,4 +42,5 @@ func main() {
 	arrays.MatrixSpiral()
 	arrays.DiagonalTraversal()
 	arrays.ZigZag()
+	arrays.RotateImage()
 }
