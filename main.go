@@ -3,11 +3,12 @@ package main
 import (
 	"github.com/anuragsoni300/__/arrays"
 	"github.com/anuragsoni300/__/common"
+	"github.com/anuragsoni300/__/linkedlist"
 	"github.com/anuragsoni300/__/strings"
 )
 
 func main() {
-
+	linkedlist.Linkedlist()
 }
 
 func Common() {
