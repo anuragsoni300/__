@@ -45,4 +45,5 @@ func main() {
 	arrays.RotateImage()
 	arrays.ZeroSumSubarray()
 	arrays.CountSubArrXork()
+	arrays.LongestConsecutive()
 }
