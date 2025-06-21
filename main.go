@@ -7,9 +7,17 @@ import (
 )
 
 func main() {
-	common.GCD()
-	strings.LongestNonRepeting()
 
+}
+
+func Common() {
+	common.GCD()
+}
+
+func Strings() {
+	strings.LongestNonRepeting()
+}
+func Array() {
 	arrays.Insertion()
 	arrays.Deletion()
 	arrays.BSearch()
