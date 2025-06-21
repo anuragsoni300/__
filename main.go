@@ -43,4 +43,6 @@ func main() {
 	arrays.DiagonalTraversal()
 	arrays.ZigZag()
 	arrays.RotateImage()
+	arrays.ZeroSumSubarray()
+	arrays.CountSubArrXork()
 }
