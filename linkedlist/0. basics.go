@@ -39,6 +39,16 @@ func (list *Linklist) _insertAfter(v1, v2 int) {
 	newNode.Next = temp
 }
 
+func (list *Linklist) _delete(val int) {
+	curr := list.head
+	prev := curr
+	for curr != nil && curr.Val != val {
+		prev = curr
+		curr = curr.Next
+	}
+	prev.Next = curr.Next
+}
+
 func (list *Linklist) _print() {
 	curr := list.head
 	for curr != nil {
@@ -55,6 +65,6 @@ func Linkedlist() {
 	myList._insert(4)
 
 	myList._insertAfter(2, 5)
-
+	myList._delete(3)
 	myList._print()
 }
