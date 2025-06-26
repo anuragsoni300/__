@@ -1,6 +1,8 @@
 package linkedlist
 
-import "fmt"
+import (
+	"fmt"
+)
 
 type Node struct {
 	Val  int
@@ -49,6 +51,17 @@ func (list *Linklist) _delete(val int) {
 	prev.Next = curr.Next
 }
 
+func (list *Linklist) _reverse() {
+	curr := list.head
+	var prev *Node
+	for curr != nil {
+		next := curr.Next
+		curr.Next = prev
+		prev = curr
+		curr = next
+	}
+}
+
 func (list *Linklist) _print() {
 	curr := list.head
 	for curr != nil {
@@ -66,5 +79,7 @@ func Linkedlist() {
 
 	myList._insertAfter(2, 5)
 	myList._delete(3)
+	myList._print()
+	myList._reverse()
 	myList._print()
 }
