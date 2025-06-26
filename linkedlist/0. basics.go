@@ -60,6 +60,7 @@ func (list *Linklist) _reverse() {
 		prev = curr
 		curr = next
 	}
+	list.head = prev
 }
 
 func (list *Linklist) _print() {
@@ -68,6 +69,7 @@ func (list *Linklist) _print() {
 		fmt.Printf("%v->", curr.Val)
 		curr = curr.Next
 	}
+	fmt.Println()
 }
 
 func Linkedlist() {
@@ -77,8 +79,8 @@ func Linkedlist() {
 	myList._insert(3)
 	myList._insert(4)
 
-	myList._insertAfter(2, 5)
-	myList._delete(3)
+	// myList._insertAfter(2, 5)
+	// myList._delete(3)
 	myList._print()
 	myList._reverse()
 	myList._print()
