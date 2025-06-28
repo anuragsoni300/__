@@ -73,6 +73,16 @@ func (list *Node) _reverseRec() *Node {
 	return rest
 }
 
+func (list *Linklist) _length() {
+	count := 0
+	curr := list.head
+	for curr != nil {
+		count++
+		curr = curr.Next
+	}
+	fmt.Printf("%-60s %v\n", "Length of thr linked list", count)
+}
+
 func (list *Linklist) _print() {
 	curr := list.head
 	for curr != nil {
@@ -95,4 +105,5 @@ func Linkedlist() {
 	myList.head = myList.head._reverseRec()
 	// myList._reverse()
 	myList._print()
+	myList._length()
 }
