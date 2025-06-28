@@ -63,6 +63,16 @@ func (list *Linklist) _reverse() {
 	list.head = prev
 }
 
+func (list *Node) _reverseRec() *Node {
+	if list == nil || list.Next == nil {
+		return list
+	}
+	rest := list.Next._reverseRec()
+	list.Next.Next = list
+	list.Next = nil
+	return rest
+}
+
 func (list *Linklist) _print() {
 	curr := list.head
 	for curr != nil {
@@ -82,6 +92,7 @@ func Linkedlist() {
 	// myList._insertAfter(2, 5)
 	// myList._delete(3)
 	myList._print()
-	myList._reverse()
+	myList.head = myList.head._reverseRec()
+	// myList._reverse()
 	myList._print()
 }
