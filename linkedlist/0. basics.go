@@ -73,6 +73,15 @@ func (list *Node) _reverseRec() *Node {
 	return rest
 }
 
+func (list *Linklist) _middle() {
+	slow, fast := list.head, list.head
+	for fast != nil && fast.Next != nil {
+		slow = slow.Next
+		fast = fast.Next.Next
+	}
+	fmt.Printf("%-60s %v\n", "Middle element", slow.Val)
+}
+
 func (list *Linklist) _length() {
 	count := 0
 	curr := list.head
@@ -98,6 +107,12 @@ func Linkedlist() {
 	myList._insert(2)
 	myList._insert(3)
 	myList._insert(4)
+	myList._insert(5)
+	myList._insert(6)
+	myList._insert(7)
+	myList._insert(8)
+	myList._insert(9)
+	myList._insert(10)
 
 	// myList._insertAfter(2, 5)
 	// myList._delete(3)
@@ -106,4 +121,5 @@ func Linkedlist() {
 	// myList._reverse()
 	myList._print()
 	myList._length()
+	myList._middle()
 }
