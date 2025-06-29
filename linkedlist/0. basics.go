@@ -132,6 +132,29 @@ func (list1 *Node) _mergeSortedRec(list2 *Node) *Node {
 	}
 }
 
+func (list1 *Node) _mergeSortedItr(list2 *Node) *Node {
+	dummy := &Node{}
+	curr := dummy
+	for list1 != nil && list2 != nil {
+		if list1.Val <= list2.Val {
+			curr.Next = list1
+			list1 = list1.Next
+		} else {
+			curr.Next = list2
+			list2 = list2.Next
+		}
+		curr = curr.Next
+	}
+
+	if list1 != nil {
+		curr.Next = list1
+	}
+	if list2 != nil {
+		curr.Next = list2
+	}
+	return dummy.Next
+}
+
 func (list *Linklist) _print() {
 	curr := list.head
 	for curr != nil {
@@ -158,6 +181,7 @@ func Linkedlist() {
 	list2._insert(4)
 	list2._insert(6)
 	list2._insert(8)
+
 	list2._insert(10)
 	// myList._insertAfter(2, 5)
 	// myList._delete(3)
@@ -175,6 +199,7 @@ func Linkedlist() {
 	// curr.Next = myList.head.Next
 	// myList._detectcycle()
 	// myList._print()
-	myList.head = myList.head._mergeSortedRec(list2.head)
+	// myList.head = myList.head._mergeSortedRec(list2.head)
+	myList.head = myList.head._mergeSortedItr(list2.head)
 	myList._print()
 }
