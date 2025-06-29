@@ -82,6 +82,30 @@ func (list *Linklist) _middle() {
 	fmt.Printf("%-60s %v\n", "Middle element", slow.Val)
 }
 
+func (list *Linklist) _detectcycle() {
+	slow, fast := list.head, list.head
+
+	for fast != nil && fast.Next != nil {
+		slow = slow.Next
+		fast = fast.Next.Next
+		if slow == fast {
+			fmt.Println("Cycle prsent")
+			break
+		}
+	}
+
+	if slow == fast {
+		slow = list.head
+		var prev *Node
+		for slow != fast {
+			prev = fast
+			slow = slow.Next
+			fast = fast.Next
+		}
+		prev.Next = nil
+	}
+}
+
 func (list *Linklist) _length() {
 	count := 0
 	curr := list.head
@@ -116,10 +140,18 @@ func Linkedlist() {
 
 	// myList._insertAfter(2, 5)
 	// myList._delete(3)
-	myList._print()
-	myList.head = myList.head._reverseRec()
+	// myList._print()
+	// myList.head = myList.head._reverseRec()
 	// myList._reverse()
 	myList._print()
-	myList._length()
-	myList._middle()
+	// myList._length()
+	// myList._middle()
+
+	curr := myList.head
+	for curr.Next != nil {
+		curr = curr.Next
+	}
+	curr.Next = myList.head.Next
+	myList._detectcycle()
+	myList._print()
 }
