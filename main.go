@@ -60,6 +60,8 @@ func Array() {
 
 func LinkedList() {
 	List1, List2 := linkedlist.Linklist{}, linkedlist.Linklist{}
+	List3, List4 := linkedlist.Linklist{}, linkedlist.Linklist{}
+
 	List1.Insert(1)
 	List1.Insert(3)
 	List1.Insert(5)
@@ -72,24 +74,32 @@ func LinkedList() {
 	List2.Insert(8)
 	List2.Insert(10)
 
+	List3.Insert(1)
+	List3.Insert(3)
+	List3.Insert(5)
+	List3.Insert(7)
+	List3.Insert(9)
+
+	List4.Insert(2)
+	List4.Insert(4)
+	List4.Insert(6)
+	List4.Insert(8)
+	List4.Insert(10)
+
 	List2.InsertAfter(2, 5)
-	List1.Print()
+	List2.Print()
 
 	List1.Delete(3)
 	List1.Print()
 
-	List1.Head = List1.Head.ReverseRec()
-	List1.Print()
-
 	List2.Reverse()
-	List1.Print()
+	List2.Print()
 
-	List1.Length()
-	List1.Middle()
+	List2.Length()
+	List2.Middle()
 
-	List1.Head = List1.Head.MergeSortedRec(List2.Head)
-	List1.Head = List1.Head.MergeSortedItr(List2.Head)
-	List1.Print()
+	List3.Head = List3.Head.MergeSortedRec(List4.Head)
+	List3.Print()
 
 	curr := List1.Head
 	for curr.Next != nil {

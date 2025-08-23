@@ -48,7 +48,7 @@ func (list *Linklist) Length() {
 		count++
 		curr = curr.Next
 	}
-	fmt.Printf("%-60s %v\n", "Length of thr linked list", count)
+	fmt.Printf("%-60s %v\n", "Length of the linked list", count)
 }
 
 func (list *Linklist) Print() {
