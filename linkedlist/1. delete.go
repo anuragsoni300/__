@@ -1,7 +1,7 @@
 package linkedlist
 
-func (list *Linklist) _delete(val int) {
-	curr := list.head
+func (list *Linklist) Delete(val int) {
+	curr := list.Head
 	prev := curr
 	for curr != nil && curr.Val != val {
 		prev = curr

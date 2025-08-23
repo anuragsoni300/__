@@ -1,6 +1,6 @@
 package linkedlist
 
-func (list1 *Node) _mergeSortedRec(list2 *Node) *Node {
+func (list1 *Node) MergeSortedRec(list2 *Node) *Node {
 	if list1 == nil {
 		return list2
 	} else if list2 == nil {
@@ -8,15 +8,15 @@ func (list1 *Node) _mergeSortedRec(list2 *Node) *Node {
 	}
 
 	if list1.Val <= list2.Val {
-		list1.Next = list1.Next._mergeSortedRec(list2)
+		list1.Next = list1.Next.MergeSortedRec(list2)
 		return list1
 	} else {
-		list2.Next = list2.Next._mergeSortedRec(list1)
+		list2.Next = list2.Next.MergeSortedRec(list1)
 		return list2
 	}
 }
 
-func (list1 *Node) _mergeSortedItr(list2 *Node) *Node {
+func (list1 *Node) MergeSortedItr(list2 *Node) *Node {
 	dummy := &Node{}
 	curr := dummy
 	for list1 != nil && list2 != nil {

@@ -1,7 +1,7 @@
 package linkedlist
 
-func (list *Linklist) _reverse() {
-	curr := list.head
+func (list *Linklist) Reverse() {
+	curr := list.Head
 	var prev *Node
 	for curr != nil {
 		next := curr.Next
@@ -9,14 +9,14 @@ func (list *Linklist) _reverse() {
 		prev = curr
 		curr = next
 	}
-	list.head = prev
+	list.Head = prev
 }
 
-func (list *Node) _reverseRec() *Node {
+func (list *Node) ReverseRec() *Node {
 	if list == nil || list.Next == nil {
 		return list
 	}
-	rest := list.Next._reverseRec()
+	rest := list.Next.ReverseRec()
 	list.Next.Next = list
 	list.Next = nil
 	return rest

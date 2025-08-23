@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	linkedlist.Linkedlist()
+	LinkedList()
 }
 
 func Common() {
@@ -18,6 +18,7 @@ func Common() {
 func Strings() {
 	strings.LongestNonRepeting()
 }
+
 func Array() {
 	arrays.Insertion()
 	arrays.Deletion()
@@ -55,4 +56,46 @@ func Array() {
 	arrays.ZeroSumSubarray()
 	arrays.CountSubArrXork()
 	arrays.LongestConsecutive()
+}
+
+func LinkedList() {
+	List1, List2 := linkedlist.Linklist{}, linkedlist.Linklist{}
+	List1.Insert(1)
+	List1.Insert(3)
+	List1.Insert(5)
+	List1.Insert(7)
+	List1.Insert(9)
+
+	List2.Insert(2)
+	List2.Insert(4)
+	List2.Insert(6)
+	List2.Insert(8)
+	List2.Insert(10)
+
+	List2.InsertAfter(2, 5)
+	List1.Print()
+
+	List1.Delete(3)
+	List1.Print()
+
+	List1.Head = List1.Head.ReverseRec()
+	List1.Print()
+
+	List2.Reverse()
+	List1.Print()
+
+	List1.Length()
+	List1.Middle()
+
+	List1.Head = List1.Head.MergeSortedRec(List2.Head)
+	List1.Head = List1.Head.MergeSortedItr(List2.Head)
+	List1.Print()
+
+	curr := List1.Head
+	for curr.Next != nil {
+		curr = curr.Next
+	}
+	curr.Next = List1.Head.Next
+	List1.Detectcycle()
+	List1.Print()
 }
