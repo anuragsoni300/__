@@ -16,5 +16,5 @@ func Kadanes() {
 			currSum = 0
 		}
 	}
-	fmt.Printf("%-60s %v\n", "Two sum index", ans)
+	fmt.Printf("%-60s %v\n", "Kadanes: ", ans)
 }
