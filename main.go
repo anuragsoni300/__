@@ -108,4 +108,11 @@ func LinkedList() {
 	curr.Next = List1.Head.Next
 	List1.Detectcycle()
 	List1.Print()
+	List2.Print()
+
+	curr.Next = List2.Head.Next.Next.Next
+	List1.Print()
+
+	linkedlist.IntersectionPoint1(List1.Head, List2.Head)
+	linkedlist.IntersectionPoint2(List1.Head, List2.Head)
 }
