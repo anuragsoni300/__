@@ -61,6 +61,7 @@ func Array() {
 func LinkedList() {
 	List1, List2 := linkedlist.Linklist{}, linkedlist.Linklist{}
 	List3, List4 := linkedlist.Linklist{}, linkedlist.Linklist{}
+	pallindrome, _ := linkedlist.Linklist{}, linkedlist.Linklist{}
 
 	List1.Insert(1)
 	List1.Insert(3)
@@ -115,4 +116,12 @@ func LinkedList() {
 
 	linkedlist.IntersectionPoint1(List1.Head, List2.Head)
 	linkedlist.IntersectionPoint2(List1.Head, List2.Head)
+
+	pallindrome.Insert(1)
+	pallindrome.Insert(2)
+	pallindrome.Insert(3)
+	pallindrome.Insert(2)
+	pallindrome.Insert(1)
+	pallindrome.Head.IsPallindromeRec()
+	pallindrome.Head.IsPallindromeItr()
 }
