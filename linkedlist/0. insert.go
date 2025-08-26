@@ -48,14 +48,20 @@ func (list *Linklist) Length() {
 		count++
 		curr = curr.Next
 	}
-	fmt.Printf("%-60s %v\n", "Length of the linked list", count)
+
+	PLog("Length of the linked list", count)
 }
 
-func (list *Linklist) Print() {
+func (list *Linklist) Print(s string) {
+	str := ""
 	curr := list.Head
 	for curr != nil {
-		fmt.Printf("%v->", curr.Val)
+		str += fmt.Sprintf("%v->", curr.Val)
 		curr = curr.Next
 	}
-	fmt.Println()
+	PLog(s, str)
+}
+
+func PLog(f, s any) {
+	fmt.Printf("%-60v %v\n", f, s)
 }

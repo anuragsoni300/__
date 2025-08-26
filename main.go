@@ -88,19 +88,19 @@ func LinkedList() {
 	List4.Insert(10)
 
 	List2.InsertAfter(2, 5)
-	List2.Print()
+	List2.Print("Insert 5 After 2")
 
 	List1.Delete(3)
-	List1.Print()
+	List1.Print("Delete 3")
 
 	List2.Reverse()
-	List2.Print()
+	List2.Print("Reverse")
 
 	List2.Length()
 	List2.Middle()
 
 	List3.Head = List3.Head.MergeSortedRec(List4.Head)
-	List3.Print()
+	List3.Print("Merge Sort")
 
 	curr := List1.Head
 	for curr.Next != nil {
@@ -108,11 +108,11 @@ func LinkedList() {
 	}
 	curr.Next = List1.Head.Next
 	List1.Detectcycle()
-	List1.Print()
-	List2.Print()
+	List1.Print("List1")
+	List2.Print("List2")
 
 	curr.Next = List2.Head.Next.Next.Next
-	List1.Print()
+	List1.Print("List1")
 
 	linkedlist.IntersectionPoint1(List1.Head, List2.Head)
 	linkedlist.IntersectionPoint2(List1.Head, List2.Head)
@@ -124,4 +124,7 @@ func LinkedList() {
 	pallindrome.Insert(1)
 	pallindrome.Head.IsPallindromeRec()
 	pallindrome.Head.IsPallindromeItr()
+
+	List1.Print("List1")
+	List1.Head.NthNodeFromLast(1)
 }

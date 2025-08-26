@@ -1,9 +1,5 @@
 package linkedlist
 
-import (
-	"fmt"
-)
-
 func IntersectionPoint1(list1, list2 *Node) {
 	mem := make(map[Node]bool)
 	curr := list1
@@ -16,7 +12,7 @@ func IntersectionPoint1(list1, list2 *Node) {
 	curr = list2
 	for curr != nil {
 		if mem[*curr] {
-			fmt.Printf("%-60s %v\n", "Intersection point using hashMap: ", curr.Val)
+			PLog("Intersection point using hashMap", curr.Val)
 			break
 		}
 		curr = curr.Next
@@ -55,7 +51,7 @@ func IntersectionPoint2(list1, list2 *Node) {
 
 	for curr1 != nil && curr2 != nil {
 		if curr1 == curr2 {
-			fmt.Printf("%-60s %v\n", "Intersection point using Node count: ", curr1.Val)
+			PLog("Intersection point using Node count", curr1.Val)
 			break
 		}
 		curr1 = curr1.Next

@@ -1,7 +1,5 @@
 package linkedlist
 
-import "fmt"
-
 func (end *Node) _pallindrome(start **Node) bool {
 	if end == nil {
 		return true
@@ -17,9 +15,9 @@ func (end *Node) _pallindrome(start **Node) bool {
 func (List *Node) IsPallindromeRec() {
 	start := &List
 	if List._pallindrome(start) {
-		fmt.Printf("%-60s %s\n", "Pallindrome", "Yes")
+		PLog("Pallindrome", "Yes")
 	} else {
-		fmt.Printf("%-60s %s\n", "Pallindrome", "No")
+		PLog("Pallindrome", "No")
 	}
 }
 
@@ -51,8 +49,8 @@ func (List *Node) IsPallindromeItr() {
 	}
 
 	if isPallindrome {
-		fmt.Printf("%-60s %s\n", "Pallindrome", "Yes")
+		PLog("Pallindrome", "Yes")
 	} else {
-		fmt.Printf("%-60s %s\n", "Pallindrome", "No")
+		PLog("Pallindrome", "No")
 	}
 }
