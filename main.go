@@ -61,7 +61,7 @@ func Array() {
 func LinkedList() {
 	List1, List2 := linkedlist.Linklist{}, linkedlist.Linklist{}
 	List3, List4 := linkedlist.Linklist{}, linkedlist.Linklist{}
-	pallindrome, _ := linkedlist.Linklist{}, linkedlist.Linklist{}
+	pallindrome, dup := linkedlist.Linklist{}, linkedlist.Linklist{}
 
 	List1.Insert(1)
 	List1.Insert(3)
@@ -127,4 +127,12 @@ func LinkedList() {
 
 	List1.Print("List1")
 	List1.Head.NthNodeFromLast(1)
+
+	dup.Insert(1)
+	dup.Insert(2)
+	dup.Insert(2)
+	dup.Insert(2)
+	dup.Insert(3)
+	dup.Head.RemoveDuplicatesFromSorted()
+	dup.Print("Duplicate")
 }
