@@ -1,14 +1,11 @@
 package linkedlist
 
 func (List *Node) RemoveDuplicatesFromSorted() *Node {
-	prev := &Node{}
 	head := List
-	for List != nil {
-		if prev.Val == List.Val {
-			prev.Next = List.Next
-			List = List.Next
+	for List != nil && List.Next != nil {
+		if List.Val == List.Next.Val {
+			List.Next = List.Next.Next
 		} else {
-			prev = List
 			List = List.Next
 		}
 	}
