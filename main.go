@@ -16,6 +16,8 @@ func BinaryTree() {
 	bt := &tree.BTree{}
 	bt.Insert(10).Insert(4).Insert(1).Insert(12).Insert(8).Insert(5).Insert(2)
 	bt.Print()
+
+	bt.Search(4)
 }
 
 func Common() {

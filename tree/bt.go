@@ -1,5 +1,7 @@
 package tree
 
+import "fmt"
+
 type TNode struct {
 	Val   int
 	Left  *TNode
@@ -20,6 +22,10 @@ func (bt *BTree) PreOrder() {
 
 func (bt *BTree) PostOrder() {
 	bt.Root.postOrder()
+}
+
+func (bt *BTree) Search(val int) {
+	bt.Root.search(val)
 }
 
 func (bt *BTree) Insert(val int) *BTree {
@@ -79,4 +85,24 @@ func (root *TNode) postOrder() {
 	root.Right.postOrder()
 	print(root.Val, " ")
 	return
+}
+
+func (root *TNode) search(val int) {
+	if root == nil {
+		PLog("Not Found", val)
+		return
+	}
+	if root.Val == val {
+		PLog("Found", val)
+		return
+	}
+	if val < root.Val {
+		root.Left.search(val)
+	} else {
+		root.Right.search(val)
+	}
+}
+
+func PLog(f, s any) {
+	fmt.Printf("%-60v %v\n", f, s)
 }
