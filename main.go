@@ -5,10 +5,17 @@ import (
 	"github.com/anuragsoni300/__/common"
 	"github.com/anuragsoni300/__/linkedlist"
 	"github.com/anuragsoni300/__/strings"
+	"github.com/anuragsoni300/__/tree"
 )
 
 func main() {
-	LinkedList()
+	BinaryTree()
+}
+
+func BinaryTree() {
+	bt := &tree.BTree{}
+	bt.Insert(10).Insert(4).Insert(1).Insert(12).Insert(8).Insert(5).Insert(2)
+	bt.Print()
 }
 
 func Common() {
