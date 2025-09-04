@@ -18,6 +18,7 @@ func BinaryTree() {
 	bt.Print()
 
 	bt.Search(4)
+	bt.LevelOrderTraversal()
 }
 
 func Common() {
